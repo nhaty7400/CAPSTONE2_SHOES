@@ -6,4 +6,36 @@
 
 html, body {
   font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #e2e7f7;
+}
+
+header {
+  background-color: #2A5D67;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar-brand {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar .components-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .components-group .nav-item {
+  font-size: 20px;
+  margin: 10px;
+}
+.navbar .components-group button {
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

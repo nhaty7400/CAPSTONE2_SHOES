@@ -1,0 +1,24 @@
+header {
+    background-color: $color-primary-1;
+    padding: 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navbar-brand {
+        @include styleText($color-white-1, $fs-3, $fw-3);
+    }
+    .components-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav-item {
+            font-size: $fs-2;
+            margin: $mg-1;
+        }
+        button{
+            border-radius: $br-1;
+        }
+    }
+}
