@@ -1,0 +1,12 @@
+.cybershoes-carousel-btn{
+    @include styleButton($pd-4,$pd-3,$color-primary-2,transparent,$br-1);
+
+    @include styleText($color-white-1,$fs-2,$fw-2);
+
+    transition: all .5s;
+
+    &:hover{
+        @include styleButtonHover($color-primary-1,$border-1,$color-gray-2);
+        opacity: 0.95;
+    }
+}

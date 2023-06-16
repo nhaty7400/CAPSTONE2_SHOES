@@ -12,9 +12,26 @@ html, body {
   background-color: #e2e7f7;
 }
 
+.cybershoes-carousel-btn {
+  padding: 13px 35px;
+  background: #54BACF;
+  border: transparent;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+.cybershoes-carousel-btn:hover {
+  background: #2A5D67;
+  border: 1px solid #e2e7f7;
+  opacity: 0.95;
+}
+
 header {
   background-color: #2A5D67;
   padding: 10px;
+  border-bottom: 1px solid #54BACF;
 }
 
 .navbar {
@@ -24,8 +41,9 @@ header {
 }
 .navbar .navbar-brand {
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
+  text-shadow: 3px 3px #000000;
 }
 .navbar .components-group {
   display: flex;
@@ -38,4 +56,23 @@ header {
 }
 .navbar .components-group button {
   border-radius: 10px;
+}
+
+.cybershoes-carousel {
+  background-color: #2A5D67;
+  padding: 13px;
+  background-image: url(../../img/wave.svg);
+  background-size: cover;
+  background-position: center bottom;
+}
+.cybershoes-carousel h1 {
+  color: #54BACF;
+  font-size: 70px;
+  font-weight: 700;
+  text-shadow: 2px 2px #CACFDF;
+}
+.cybershoes-carousel h3 {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

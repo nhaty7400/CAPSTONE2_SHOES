@@ -4,10 +4,14 @@
     font-weight: $fw;
 }
 
-@mixin button($pd1,$pd2,$color,$bg-color,$border,$border-color,$br){
-    padding: $pd1 $pd2;
-    color: $color;
-    background-color: $bg-color;
-    border: $border solid $border-color;
+@mixin styleButton($pd-y,$pd-x,$bg,$border,$br){
+    padding: $pd-y $pd-x;
+    background: $bg;
+    border: $border;
     border-radius: $br;
+}
+
+@mixin styleButtonHover($bg,$border,$bc){
+    background: $bg;
+    border:$border solid $bc;
 }

@@ -1,13 +1,15 @@
 header {
     background-color: $color-primary-1;
     padding: 10px;
+    border-bottom: 1px solid $color-primary-2;
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     .navbar-brand {
-        @include styleText($color-white-1, $fs-3, $fw-3);
+        @include styleText($color-white-1, $fs-4, $fw-3);
+        text-shadow: 3px 3px $color-black-1;
     }
     .components-group {
         display: flex;

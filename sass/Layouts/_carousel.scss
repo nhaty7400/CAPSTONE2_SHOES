@@ -1,0 +1,14 @@
+.cybershoes-carousel {
+    background-color: $color-primary-1;
+    padding: $pd-4;
+    background-image: url(../../img/wave.svg);
+    background-size: cover;
+    background-position: center bottom;
+    h1 {
+        @include styleText($color-primary-2, $fs-5, $fw-3);
+        text-shadow: 2px 2px $color-gray-1;
+    }
+    h3 {
+        @include styleText($color-white-1, $fs-3, $fw-3);
+    }
+}
