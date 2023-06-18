@@ -1,4 +1,5 @@
 .cybershoes-product{
+    padding-bottom: $pd-6+5;
     background-color: $color-gray-1;
     h1{
         @include styleText($color-primary-1,$fs-4+5,$fw-3);

@@ -136,6 +136,7 @@ header {
 }
 
 .cybershoes-product {
+  padding-bottom: 75px;
   background-color: #CACFDF;
 }
 .cybershoes-product h1 {
@@ -157,7 +158,7 @@ header {
 
 .cybershoes-footer {
   background-color: #2A5D67;
-  padding-bottom: 62px;
+  padding: 62px 0;
 }
 .cybershoes-footer .col-8 .nav-item .nav-link {
   color: #FFFFFF;
@@ -167,4 +168,83 @@ header {
 }
 .cybershoes-footer .col-8 .nav-item .nav-link:hover {
   color: #CACFDF;
+}
+
+.register {
+  padding: 62px;
+}
+.register h1 {
+  color: #2A5D67;
+  font-size: 35px;
+  font-weight: 700;
+}
+.register .form-group label {
+  color: #2A5D67;
+  font-size: 24px;
+  font-weight: 400;
+}
+.register .form-group span {
+  color: #2A5D67;
+  font-size: 24px;
+  font-weight: 400;
+}
+.register .radio-container {
+  padding: 8px;
+}
+.register .radio-container input[type=radio] {
+  display: none;
+}
+.register .radio-container label {
+  position: relative;
+  cursor: pointer;
+  padding-right: 32px;
+}
+.register .radio-container label:nth-last-child(1) {
+  padding-right: 0px;
+}
+.register .radio-container label::before {
+  content: "";
+  border: 4px solid #2A5D67;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -8px 20px;
+  margin-left: 0;
+  border-radius: 50%;
+}
+.register .radio-container label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #2A5D67;
+  left: 3px;
+  top: 15px;
+  margin: -8px 20px;
+  margin-left: 0;
+  border-radius: 50%;
+  opacity: 0;
+}
+.register .radio-container input[type=radio]:checked + label::after {
+  opacity: 1;
+}
+
+.login {
+  padding: 62px;
+}
+.login h1 {
+  color: #2A5D67;
+  font-size: 35px;
+  font-weight: 700;
+}
+.login .form-group label {
+  color: #2A5D67;
+  font-size: 24px;
+  font-weight: 400;
+}
+.login .form-group span {
+  color: #2A5D67;
+  font-size: 24px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
