@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>CAPSTONE PROJECT 2</title>
+  <title>CyberShoes</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,6 +26,164 @@
 </head>
 
 <body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">CyberShoes</a>
+        <ul class="navbar-nav components-group">
+          <li class="nav-item">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/login.html"><button class="btn btn-light">Log In</button></a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/register.html"><button class="btn btn-dark">Register</button></a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+  </header>
+  <section>
+    <div class="cybershoes-carousel">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img class="img-fluid" src="./img/carousel.png" alt="">
+          </div>
+          <div class="col-6 d-flex align-items-center">
+            <div>
+              <h1>CyberShoes</h1>
+              <h3>Where you can get your right shoes</h3>
+              <button class="cybershoes-carousel-btn mt-4" href="#">Shop now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cybershoes-product">
+    <div class="container">
+      <h1 class="text-center py-5">--Feature Products--</h1>
+      <div class="cybershoes-product-category my-4 d-flex justify-content-center ">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link cybershoes-category-btn" id="pills-all-tab" data-toggle="pill"
+              data-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+              aria-selected="true">All</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link cybershoes-category-btn" id="pills-addidas-tab" data-toggle="pill"
+              data-target="#pills-addidas" type="button" role="tab" aria-controls="pills-addidas"
+              aria-selected="false">Addidas</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link cybershoes-category-btn" id="pills-nike-tab" data-toggle="pill"
+              data-target="#pills-nike" type="button" role="tab" aria-controls="pills-nike"
+              aria-selected="false">Nike</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link cybershoes-category-btn" id="pills-vanscv-tab" data-toggle="pill"
+              data-target="#pills-vanscv" type="button" role="tab" aria-controls="pills-vanscv"
+              aria-selected="false">Vans Converse</button>
+          </li>
+        </ul>
+      </div>
+      <div class="cybershoes-product-content mt-5">
+        <div class="row" id="cybershoes-product">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card cybershoes-card">
+              <img src="./img/product-img.png" class="card-img-top" alt="...">
+              <div class="card-body px-2">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="card-title">Adidas Prophere</h5>
+                  <h5 class="card-price">$100</h5>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="card-rate">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <a href="#" class="cybershoes-card-btn">View detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card cybershoes-card">
+              <img src="./img/product-img.png" class="card-img-top" alt="...">
+              <div class="card-body px-2">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="card-title">Adidas Prophere</h5>
+                  <h5 class="card-price">$100</h5>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="card-rate">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <a href="#" class="cybershoes-card-btn">View detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card cybershoes-card">
+              <img src="./img/product-img.png" class="card-img-top" alt="...">
+              <div class="card-body px-2">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="card-title">Adidas Prophere</h5>
+                  <h5 class="card-price">$100</h5>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="card-rate">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <a href="#" class="cybershoes-card-btn">View detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="cybershoes-footer">
+    <img class="img-fluid" src="./img/wave-footer.svg" alt="">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-4">© 2023</div>
+        <div class="col-8">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -36,6 +194,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+    <!-- My JS -->
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

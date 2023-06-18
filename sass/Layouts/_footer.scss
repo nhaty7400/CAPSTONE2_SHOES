@@ -1,0 +1,15 @@
+.cybershoes-footer{
+    background-color: $color-primary-1;
+    padding-bottom: $pd-2+5;
+    .col-8{
+        .nav-item{
+            .nav-link{
+                @include styleText($color-white-1,$fs-1,$fw-2);
+                transition: all .5s;
+                &:hover{
+                    color: $color-gray-1;
+                }
+            }
+        }
+    }
+}

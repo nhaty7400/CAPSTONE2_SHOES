@@ -1,0 +1,24 @@
+@mixin styleText($color,$fs,$fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleButton($pd-y,$pd-x,$bg,$border,$br){
+    padding: $pd-y $pd-x;
+    background: $bg;
+    border: 1px solid $border;
+    border-radius: $br;
+}
+
+@mixin styleButtonHover($bg,$border,$bc){
+    background: $bg;
+    border:$border solid $bc;
+}
+
+@mixin styleCard($bg,$pd,$br,$mg){
+    background: $bg;
+    padding: $pd;
+    border-radius: $br;
+    margin-bottom: $mg;
+}
