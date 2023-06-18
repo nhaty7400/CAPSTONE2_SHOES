@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>CAPSTONE PROJECT 2</title>
+  <title>CyberShoes</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,10 +35,10 @@
             <i class="fa-solid fa-basket-shopping"></i>
           </li>
           <li class="nav-item">
-            <button class="btn btn-light">Log In</button>
+            <a href="./pages/login.html"><button class="btn btn-light">Log In</button></a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-dark">Register</button>
+            <a href="./pages/register.html"><button class="btn btn-dark">Register</button></a>
           </li>
         </ul>
 
@@ -70,20 +70,24 @@
       <div class="cybershoes-product-category my-4 d-flex justify-content-center ">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link cybershoes-category-btn" id="pills-all-tab" data-toggle="pill" data-target="#pills-all" type="button"
-              role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+            <button class="nav-link cybershoes-category-btn" id="pills-all-tab" data-toggle="pill"
+              data-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+              aria-selected="true">All</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link cybershoes-category-btn" id="pills-addidas-tab" data-toggle="pill" data-target="#pills-addidas"
-              type="button" role="tab" aria-controls="pills-addidas" aria-selected="false">Addidas</button>
+            <button class="nav-link cybershoes-category-btn" id="pills-addidas-tab" data-toggle="pill"
+              data-target="#pills-addidas" type="button" role="tab" aria-controls="pills-addidas"
+              aria-selected="false">Addidas</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link cybershoes-category-btn" id="pills-nike-tab" data-toggle="pill" data-target="#pills-nike" type="button"
-              role="tab" aria-controls="pills-nike" aria-selected="false">Nike</button>
+            <button class="nav-link cybershoes-category-btn" id="pills-nike-tab" data-toggle="pill"
+              data-target="#pills-nike" type="button" role="tab" aria-controls="pills-nike"
+              aria-selected="false">Nike</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link cybershoes-category-btn" id="pills-vanscv-tab" data-toggle="pill" data-target="#pills-vanscv" type="button"
-              role="tab" aria-controls="pills-vanscv" aria-selected="false">Vans Converse</button>
+            <button class="nav-link cybershoes-category-btn" id="pills-vanscv-tab" data-toggle="pill"
+              data-target="#pills-vanscv" type="button" role="tab" aria-controls="pills-vanscv"
+              aria-selected="false">Vans Converse</button>
           </li>
         </ul>
       </div>
@@ -152,13 +156,34 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
   </section>
-  <footer></footer>
+  <footer class="cybershoes-footer">
+    <img class="img-fluid" src="./img/wave-footer.svg" alt="">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-4">© 2023</div>
+        <div class="col-8">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -169,6 +194,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+    <!-- My JS -->
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

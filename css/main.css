@@ -119,7 +119,7 @@ header {
 .cybershoes-carousel {
   background-color: #2A5D67;
   padding: 13px;
-  background-image: url(../../img/wave.svg);
+  background-image: url(../img/wave-carousel.svg);
   background-size: cover;
   background-position: center bottom;
 }
@@ -137,7 +137,6 @@ header {
 
 .cybershoes-product {
   background-color: #CACFDF;
-  padding-bottom: 100px;
 }
 .cybershoes-product h1 {
   color: #2A5D67;
@@ -154,4 +153,18 @@ header {
   background: #2A5D67;
   border: 1px solid transparent;
   color: #FFFFFF;
+}
+
+.cybershoes-footer {
+  background-color: #2A5D67;
+  padding-bottom: 62px;
+}
+.cybershoes-footer .col-8 .nav-item .nav-link {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+.cybershoes-footer .col-8 .nav-item .nav-link:hover {
+  color: #CACFDF;
 }/*# sourceMappingURL=main.css.map */
