@@ -32,3 +32,16 @@
     }
     
 }
+
+.size-btn{
+    @include styleButton(0,0,$color-white-1,$border-1,$color-primary-1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    @include styleText($color-primary-1,$fs-1,$fw-2);
+
+    &:focus{
+        background-color: $color-primary-1;
+        color: $color-white-1;
+    }
+}

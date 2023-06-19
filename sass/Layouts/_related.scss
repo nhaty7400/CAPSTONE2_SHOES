@@ -1,0 +1,9 @@
+.related-product {
+    padding-bottom: $pd-6 + 5;
+    background-color: $color-gray-1;
+    h1 {
+        background: linear-gradient(to right, $color-primary-1, $color-primary-2);
+        -webkit-background-clip: text;
+        @include styleText(transparent, $fs-6, $fw-3);
+    }
+}

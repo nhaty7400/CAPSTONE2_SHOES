@@ -1,15 +1,17 @@
-.cybershoes-product{
-    padding-bottom: $pd-6+5;
+.cybershoes-product {
+    padding-bottom: $pd-6 + 5;
     background-color: $color-gray-1;
-    h1{
-        @include styleText($color-primary-1,$fs-4+5,$fw-3);
+    h1 {
+        background: linear-gradient(to right, $color-primary-1, $color-primary-2);
+        -webkit-background-clip: text;
+        @include styleText(transparent, $fs-6, $fw-3);
     }
-    .cybershoes-product-category{
-        .nav-item{
+    .cybershoes-product-category {
+        .nav-item {
             margin: 0 $mg-1;
-            .nav-link{
+            .nav-link {
                 border-radius: $br-2;
-                &.active{
+                &.active {
                     @include styleButtonHover($color-primary-1, $border-1, $color-transparent);
                     color: $color-white-1;
                 }

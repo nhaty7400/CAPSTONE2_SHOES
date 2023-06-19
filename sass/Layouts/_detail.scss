@@ -1,0 +1,39 @@
+.product-detail{
+    padding: $pd-6+5 0;
+    h1{
+        @include styleText($color-primary-1, $fs-4 + 5, $fw-3);
+        
+    }
+    h2{
+        @include styleText($color-primary-1, $fs-4, $fw-2);
+    }
+    p{
+        @include styleText($color-primary-1, $fs-2, $fw-1);
+    }
+}
+
+.quantity-btn{
+    button{
+        width: 35px;
+        height: 35px;
+        outline: none;
+        background: none;
+        border: $border-1 solid $color-white-2;
+        cursor: pointer;
+
+        svg{
+            color: $color-primary-1;
+        }
+
+        &:hover{
+            background-color: $color-gray-1;
+        }
+    }
+
+    #amount{
+        width: 40px;
+        text-align: center;
+        border: $border-1 solid $color-white-2;
+        background-color: $color-gray-2;
+    }
+}

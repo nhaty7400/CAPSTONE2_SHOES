@@ -61,6 +61,23 @@ html, body {
   color: #FFFFFF;
 }
 
+.size-btn {
+  padding: 0 0;
+  background: #FFFFFF;
+  border: 1px solid 1px;
+  border-radius: #2A5D67;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #2A5D67;
+  font-size: 16px;
+  font-weight: 400;
+}
+.size-btn:focus {
+  background-color: #2A5D67;
+  color: #FFFFFF;
+}
+
 .cybershoes-card {
   background: #2A5D67;
   padding: 35px;
@@ -71,6 +88,7 @@ html, body {
 }
 .cybershoes-card img {
   box-shadow: 2px 2px 20px #CACFDF, -2px -2px 20px #54BACF;
+  background: linear-gradient(to right, #2A5D67, #54BACF);
 }
 .cybershoes-card .card-title {
   color: #f2f2f2;
@@ -140,8 +158,10 @@ header {
   background-color: #CACFDF;
 }
 .cybershoes-product h1 {
-  color: #2A5D67;
-  font-size: 35px;
+  background: linear-gradient(to right, #2A5D67, #54BACF);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50px;
   font-weight: 700;
 }
 .cybershoes-product .cybershoes-product-category .nav-item {
@@ -247,4 +267,100 @@ header {
   color: #2A5D67;
   font-size: 24px;
   font-weight: 400;
+}
+
+.product-detail {
+  padding: 75px 0;
+}
+.product-detail h1 {
+  color: #2A5D67;
+  font-size: 35px;
+  font-weight: 700;
+}
+.product-detail h2 {
+  color: #2A5D67;
+  font-size: 30px;
+  font-weight: 400;
+}
+.product-detail p {
+  color: #2A5D67;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.quantity-btn button {
+  width: 35px;
+  height: 35px;
+  outline: none;
+  background: none;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+}
+.quantity-btn button svg {
+  color: #2A5D67;
+}
+.quantity-btn button:hover {
+  background-color: #CACFDF;
+}
+.quantity-btn #amount {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  background-color: #e2e7f7;
+}
+
+.related-product {
+  padding-bottom: 75px;
+  background-color: #CACFDF;
+}
+.related-product h1 {
+  background: linear-gradient(to right, #2A5D67, #54BACF);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.cart {
+  padding: 70px 0;
+}
+.cart h1 {
+  background: linear-gradient(to right, #2A5D67, #54BACF);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.shopping-list {
+  width: 100%;
+}
+.shopping-list thead {
+  background-color: #2A5D67;
+}
+.shopping-list thead th {
+  text-align: center;
+  padding: 20px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 400;
+}
+.shopping-list tbody {
+  background-color: #f2f2f2;
+}
+.shopping-list tbody tr {
+  text-align: center;
+}
+.shopping-list tbody th {
+  padding: 20px;
+}
+.shopping-list tbody th img {
+  width: 50px;
+  height: 50px;
+}
+.shopping-list tbody td {
+  padding: 20px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
