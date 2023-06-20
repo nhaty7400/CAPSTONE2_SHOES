@@ -1,7 +1,13 @@
 .cybershoes-card{
     @include styleCard($color-primary-1,$pd-3,$br-1,$mg-2);
+    padding-bottom: 0;
     box-shadow: 5px 5px 20px $color-black-1, -5px -5px 20px $color-primary-2;
     width: auto;
+
+    .d-flex{
+        align-items: center;
+    }
+
     img{
         box-shadow: 2px 2px 20px $color-gray-1, -2px -2px 20px $color-primary-2;
         background: linear-gradient(to right, $color-primary-1, $color-primary-2);
@@ -11,6 +17,7 @@
     }
     .card-price{
         @include styleText($color-white-2,$fs-2,$fw-3);
+        letter-spacing: 2px;
     }
     .card-rate{
         color: $color-yellow-1;

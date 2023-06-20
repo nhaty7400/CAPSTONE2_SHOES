@@ -83,8 +83,12 @@ html, body {
   padding: 35px;
   border-radius: 10px;
   margin-bottom: 30px;
+  padding-bottom: 0;
   box-shadow: 5px 5px 20px #000000, -5px -5px 20px #54BACF;
   width: auto;
+}
+.cybershoes-card .d-flex {
+  align-items: center;
 }
 .cybershoes-card img {
   box-shadow: 2px 2px 20px #CACFDF, -2px -2px 20px #54BACF;
@@ -99,6 +103,7 @@ html, body {
   color: #f2f2f2;
   font-size: 20px;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .cybershoes-card .card-rate {
   color: #f9d412;

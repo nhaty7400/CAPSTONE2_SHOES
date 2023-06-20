@@ -1,4 +1,4 @@
-export const quantityBtn=()=>{let amountElement = document.getElementById("amount");
+let amountElement = document.getElementById("amount");
 let amount = amountElement.value;
 
 let render = (amount) => {
@@ -10,7 +10,6 @@ let handlePlus = () => {
   amount++;
   render(amount);
 };
-window.handlePlus=handlePlus;
 
 // handle minus
 let handleMinus = () => {
@@ -19,12 +18,11 @@ let handleMinus = () => {
     render(amount);
   }
 };
-window.handleMinus=handleMinus;
+window.hand;
 
 amountElement.addEventListener("input", () => {
   amount = amountElement.value;
   amount = parseInt(amount);
-  amount = (isNaN(amount)||amount==0) ? 1 : amount;
+  amount = isNaN(amount) || amount == 0 ? 1 : amount;
   render(amount);
 });
-};

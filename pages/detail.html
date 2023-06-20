@@ -48,7 +48,7 @@
     </header>
     <section class="product-detail">
         <div class="container">
-            <div class="row">
+            <div class="row" id="product-detail">
                 <div class="col-12 col-md-6">
                     <img class="img-fluid" src="../img/product-img.png" alt="">
                 </div>
@@ -83,10 +83,6 @@
                     </div>
                     <button class="cybershoes-carousel-btn my-5">Add to cart</button>
                 </div>
-
-                <div>
-                    
-                </div>
             </div>
         </div>
     </section>
@@ -95,69 +91,6 @@
             <h1 class="text-center pt-5">--Related Products--</h1>
             <div class="cybershoes-product-content mt-5">
                 <div class="row" id="cybershoes-related-product">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card cybershoes-card">
-                            <img src="../img/product-img.png" class="card-img-top" alt="...">
-                            <div class="card-body px-2">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <h5 class="card-title">Adidas Prophere</h5>
-                                    <h5 class="card-price">$100</h5>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="card-rate">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <a href="#" class="cybershoes-card-btn">View detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card cybershoes-card">
-                            <img src="../img/product-img.png" class="card-img-top" alt="...">
-                            <div class="card-body px-2">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <h5 class="card-title">Adidas Prophere</h5>
-                                    <h5 class="card-price">$100</h5>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="card-rate">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <a href="#" class="cybershoes-card-btn">View detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card cybershoes-card">
-                            <img src="../img/product-img.png" class="card-img-top" alt="...">
-                            <div class="card-body px-2">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <h5 class="card-title">Adidas Prophere</h5>
-                                    <h5 class="card-price">$100</h5>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="card-rate">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <a href="#" class="cybershoes-card-btn">View detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -196,9 +129,13 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
     <!-- My JS -->
-    <script type="module" src="./js/main.js"></script>
-    <!-- <script src="../js/quantityBtn.js"></script> -->
+    <script src="../js/main.js"></script>
+    <script src="../js/quantityBtn.js"></script>
+    <script src="../js/detail.js"></script>
 </body>
 
 </html>
