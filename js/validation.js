@@ -10,17 +10,15 @@ function Validation() {
     return true;
   };
 
-  this.checkRadioIsChecked = function (spanID, message) {
-    let checkBox = document.getElementsByName("gender");
+  this.checkRadioIsChecked = function () {
+    let male = document.getElementById("male");
+    let female=document.getElementById("female");
 
-    if (checkBox.item[0].checked || checkBox.item[1].checked) {
-      document.getElementById(spanID).innerHTML = "";
-      document.getElementById(spanID).style.display = "none";
+    if (male.checked || female.checked) {
       return true;
     }
 
-    document.getElementById(spanID).innerHTML = message;
-    document.getElementById(spanID).style.display = "block";
+    alert("Please choose your gender");
     return false;
   };
 
