@@ -7,19 +7,6 @@ const signIn = () => {
     password: password,
   };
 
-  const helloUser = () => {
-    let accountList = JSON.parse(localStorage.getItem("userArray"));
-    let name = "";
-    accountList.forEach(account => {
-        if(account.email==email){
-            name=account.name;
-        }
-    });
-    if (name !=""){
-        document.getElementById("helloUserName").innerHTML=name;
-    }
-  };
-
   axios({
     method: "post",
     url: "https://shop.cyberlearn.vn/api/Users/signin",
@@ -27,10 +14,11 @@ const signIn = () => {
   })
     .then(function (result) {
       alert(result.data.message);
-      localStorage.setItem("token", result.data.content.accessToken);
-      helloUser();
-      window.location.href="https://www.google.com.vn/"
-      
+      localStorage.setItem("token", JSON.stringify(result.data.content.accessToken));
+      // set vào local thì phải stringify trước nha
+      window.location = "/index.html";
+      // và kiểm tra lại hàm này giúp mình
+      // và khi code nên xem log để dễ xác định lỗi nha.
     })
     .catch(function (error) {
       alert(error.response.data.message);
@@ -42,5 +30,3 @@ document.getElementById("signInBtn").addEventListener("click", (event) => {
   event.preventDefault();
   signIn();
 });
-
-

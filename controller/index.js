@@ -35,7 +35,7 @@ const renderListProduct = (listProduct) => {
         </div>
         <div class="d-flex justify-content-between">
           <h5 class="card-price">$${price}.00</h5>
-          <a href="./pages/detail.html?productid=${id}" class="cybershoes-card-btn">View detail</a>
+          <a href="./views/detail.html?productid=${id}" class="cybershoes-card-btn">View detail</a>
         </div>
       </div>
     </div>
