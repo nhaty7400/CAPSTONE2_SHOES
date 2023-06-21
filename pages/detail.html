@@ -30,15 +30,27 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="../index.html">CyberShoes</a>
-                <ul class="navbar-nav components-group">
+                <ul class="navbar-nav components-group" id="isNotLogIn">
                     <li class="nav-item">
-                        <i class="fa-solid fa-basket-shopping"></i>
+                        <a href="./login.html"><i class="fa-solid fa-basket-shopping text-white"></i></a>
                     </li>
                     <li class="nav-item">
                         <a href="./login.html"><button class="btn btn-light">Log In</button></a>
                     </li>
                     <li class="nav-item">
                         <a href="./register.html"><button class="btn btn-dark">Register</button></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav components-group" id="isLogIn">
+                    <li class="nav-item">
+                        <a href="./cart.html"><i class="fa-solid fa-basket-shopping text-white"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <span id="helloUserName"> Hello </span>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-light" id="logOut">Log Out</button>
                     </li>
                 </ul>
 
@@ -133,7 +145,8 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
     <!-- My JS -->
-    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/logout.js"></script>
     <script src="../js/quantityBtn.js"></script>
     <script src="../js/detail.js"></script>
 </body>

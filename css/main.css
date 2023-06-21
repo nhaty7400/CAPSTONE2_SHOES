@@ -139,6 +139,10 @@ header {
   border-radius: 10px;
 }
 
+#isLogIn {
+  display: none;
+}
+
 .cybershoes-carousel {
   background-color: #2A5D67;
   padding: 13px;

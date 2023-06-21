@@ -50,6 +50,10 @@ const checkValid = () => {
       "spanConfirmPass",
       "Password and confirm password must be the same. Please try again"
     );
+
+    userArray=[];
+
+
   isValid &= validation.checkRadioIsChecked();
 
   if (isValid) {
@@ -75,17 +79,26 @@ const checkValid = () => {
       data: account,
     })
       .then(function (result) {
-        console.log(result);
-        alert("Sign up success");
+        let storagedAccount={
+          email: email,
+          name: name
+        };
+        userArray.push(storagedAccount);
+        localStorage.setItem("userArray", JSON.stringify(userArray));
+        alert(result.data.message);
+        resetForm();
       })
       .catch(function (error) {
-        console.log(error);
-        alert(error.data.message);
+        alert(error.response.data.message);
       });
   }
 };
 
 document.getElementById("sign-un-btn").addEventListener("click", (event) => {
   event.preventDefault();
-  checkValid(event);
+  checkValid();
 });
+
+function resetForm() {
+  document.getElementById("formRegister").reset();
+}

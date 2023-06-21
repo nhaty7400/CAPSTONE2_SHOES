@@ -2,6 +2,7 @@ header {
     background-color: $color-primary-1;
     padding: 10px;
     border-bottom: 1px solid $color-primary-2;
+    
 }
 .navbar {
     display: flex;
@@ -23,4 +24,8 @@ header {
             border-radius: $br-1;
         }
     }
+}
+
+#isLogIn{
+    display: none;
 }
