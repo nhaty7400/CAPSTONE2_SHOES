@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./asset/css/main.css">
 </head>
 
 <body>
@@ -32,19 +32,19 @@
         <a class="navbar-brand" href="./index.html">CyberShoes</a>
         <ul class="navbar-nav components-group" id="isNotLogIn">
           <li class="nav-item">
-            <a href="./pages/login.html"><i class="fa-solid fa-basket-shopping text-white"></i></a>
+            <a href="./views/login.html"><i class="fa-solid fa-basket-shopping text-white"></i></a>
           </li>
           <li class="nav-item">
-            <a href="./pages/login.html"><button class="btn btn-light">Log In</button></a>
+            <a href="./views/login.html"><button class="btn btn-light">Log In</button></a>
           </li>
           <li class="nav-item">
-            <a href="./pages/register.html"><button class="btn btn-dark">Register</button></a>
+            <a href="./views/register.html"><button class="btn btn-dark">Register</button></a>
           </li>
         </ul>
 
         <ul class="navbar-nav components-group" id="isLogIn">
           <li class="nav-item">
-            <a href="./pages/cart.html"><i class="fa-solid fa-basket-shopping text-white"></i></a>
+            <a href="./views/cart.html"><i class="fa-solid fa-basket-shopping text-white"></i></a>
           </li>
           <li class="nav-item">
             <span id="helloUserName"> Hello </span>
@@ -63,7 +63,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <img class="img-fluid" src="./img/carousel.png" alt="">
+            <img class="img-fluid" src="./asset/img/carousel.png" alt="">
           </div>
           <div class="col-6 d-flex align-items-center">
             <div>
@@ -149,9 +149,9 @@
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
   <!-- My JS -->
-  <script src="./js/login.js"></script>
-  <script src="./js/logout.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="./controller/login.js"></script>
+  <script src="./controller/logout.js"></script>
+  <script src="./controller/index.js"></script>
 </body>
 
 </html>

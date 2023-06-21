@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>CyberShoes - Login</title>
+  <title>CyberShoes - Register</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../asset/css/main.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
             <a href="./cart.html"><i class="fa-solid fa-basket-shopping text-white"></i></a>
           </li>
           <li class="nav-item">
-            <span id="helloUserName">Hello </span>
+            <span id="helloUserName"> Hello </span>
           </li>
           <li class="nav-item">
             <button class="btn btn-light" id="logOut">Log Out</button>
@@ -58,17 +58,30 @@
     </div>
 
   </header>
-  <section class="login">
+  <section class="register">
     <div class="container">
-      <h1 class="text-center">Sign in your account</h1>
-      <form id="formLogIn">
+      <h1 class="text-center">Register Form</h1>
+      <form id="formRegister">
         <div class="row d-flex justify-content-center">
           <div class="col-6 form-group">
             <label for="">Email</label>
             <input type="text" class="form-control" id="cyberEmail">
             <span id="spanEmail" class="text-danger"></span>
           </div>
-
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" id="cyberName">
+            <span id="spanName" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 form-group">
+            <label for="">Phone</label>
+            <input type="text" class="form-control" id="cyberPhone">
+            <span id="spanPhone" class="text-danger"></span>
+          </div>
         </div>
         <div class="row d-flex justify-content-center">
           <div class="col-6 form-group">
@@ -78,7 +91,29 @@
           </div>
         </div>
         <div class="row d-flex justify-content-center">
-          <button class="cybershoes-carousel-btn mt-3" id="signInBtn">Sign in</button>
+          <div class="col-6 form-group">
+            <label for="">Confirm Password</label>
+            <input type="password" class="form-control" id="cyberConfirmPass">
+            <span id="spanConfirmPass" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 form-group">
+            <span>Gender</span>
+            <div class="radio-group d-flex justify-content-center">
+              <div class="radio-container">
+                <input type="radio" id="male" name="gender" class="active">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <button class="cybershoes-carousel-btn" id="sign-un-btn">Sign up</button>
         </div>
       </form>
     </div>
@@ -121,8 +156,8 @@
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
   <!-- My JS -->
-  <script src="../js/logout.js"></script>
-  <script src="../js/login.js"></script>
+  <script src="../model/validation.js"></script>
+  <script src="../controller/register.js"></script>
 </body>
 
 </html>

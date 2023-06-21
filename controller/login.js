@@ -29,6 +29,7 @@ const signIn = () => {
       alert(result.data.message);
       localStorage.setItem("token", result.data.content.accessToken);
       helloUser();
+      window.location.href="https://www.google.com.vn/"
       
     })
     .catch(function (error) {

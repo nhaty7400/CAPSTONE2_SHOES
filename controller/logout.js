@@ -16,3 +16,4 @@ document.getElementById("logOut").addEventListener("click", (event)=>{
     event.preventDefault();
     logOut();
 });
+
