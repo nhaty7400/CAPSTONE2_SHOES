@@ -11,6 +11,7 @@ function CartList(){
         if(item.id===id){
             isExist=true;
         }
+        console.log(isExist);
         return isExist;
     });
    }
@@ -34,5 +35,6 @@ function CartList(){
 
     this.quantityUp=(item)=>{
         item.quantityOrder++;
+        console.log(item.quantityOrder);
     }
 }

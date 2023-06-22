@@ -7,6 +7,7 @@ const setLocalStorage = () => {
 
 const getLocalStorage = () => {
   let dataLocal = JSON.parse(localStorage.getItem("cartList"));
+  console.log(dataLocal);
 
   if (dataLocal !== null) {
     renderCartList(dataLocal);
@@ -14,44 +15,44 @@ const getLocalStorage = () => {
   }
 };
 
+getLocalStorage();
+
 // cart related functions
 window.onload = function () {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("productid");
 
-  function getProduct() {
-    axios({
-      method: "get",
-      url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=" + myParam,
+  axios({
+    method: "get",
+    url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=" + myParam,
+  })
+    .then(function (result) {
+      console.log(result);
+      const addToCart = () => {
+        let id = result.data.content.id;
+        let img = result.data.content.image;
+        let name = result.data.content.name;
+        let price = result.data.content.price;
+        let quantityOrder = 1;
+
+        let item = CartItem(id, img, name, price, quantityOrder);
+        console.log(item);
+        if (cartList.isExist(item.id) === false) {
+          cartList.addToCart(item);
+          alert("Add new item to cart success");
+        } else {
+          cartList.quantityUp(item);
+          alert("Add item to cart success");
+        }
+
+        setLocalStorage();
+        renderCartList(cartList.itemArray);
+      };
+      document.getElementById("addToCart").addEventListener("click", addToCart);
     })
-      .then(function (result) {
-        const addToCart = () => {
-          let id = result.data.content.id;
-          let img = result.data.content.image;
-          let name = result.data.content.name;
-          let price = result.data.content.price;
-          let quantityOrder = 0;
-
-          let item = CartItem(id, img, name, price, quantityOrder);
-          if (cartList.isExist(item.id === false)) {
-            cartList.addToCart(item);
-            alert("Add new item to cart success");
-          } else {
-            cartList.quantityUp(item);
-            alert("Add item to cart success");
-          }
-          document
-            .getElementById("addToCart")
-            .addEventListener("click", addToCart);
-
-          setLocalStorage();
-          renderCartList(cartList.itemArray);
-        };
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }
+    .catch(function (error) {
+      console.log(error);
+    });
 };
 
 const renderCartList = (array) => {
@@ -72,7 +73,7 @@ const renderCartList = (array) => {
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
                                     </svg>
                                 </button>
-                                <input type="text" name="amount" id="amount" value="${item.quantityOrder}">
+                                <input type="text" name="amount" id="amount" value="'${item.quantityOrder}'">
                                 <button class="plus-btn" onclick="handlePlus()"><svg xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                         class="w-4 h-4">
