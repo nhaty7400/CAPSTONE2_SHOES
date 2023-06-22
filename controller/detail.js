@@ -40,22 +40,7 @@ window.onload = function () {
               <div class="size-btn-group">
               </div>
           </div>
-          <div class="quantity-btn d-flex mt-3">
-              <button class="minus-btn" onclick="handleMinus()"><svg xmlns="http://www.w3.org/2000/svg"
-                      fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                      class="w-4 h-4">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
-                  </svg>
-              </button>
-              <input type="text" name="amount" id="amount" value="1">
-              <button class="plus-btn" onclick="handlePlus()"><svg xmlns="http://www.w3.org/2000/svg"
-                      fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                      class="w-4 h-4">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                  </svg>
-              </button>
-          </div>
-          <button class="cybershoes-carousel-btn my-5">Add to cart</button>
+          <button class="cybershoes-carousel-btn my-5" id="addToCart">Add to cart</button>
       </div>
               `;
 
