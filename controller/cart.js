@@ -1,6 +1,3 @@
-
-
-
 const renderCartList = (array) => {
   let cartBox = document.getElementById("tbodyCart");
 
@@ -11,6 +8,7 @@ const renderCartList = (array) => {
                             <img class="img-fluid" src="${item.img}" alt="">
                         </th>
                         <td>${item.name}</td>
+                        <td>$${item.price}.00</td>
                         <td class="">
                             <div class="quantity-btn d-flex d-flex justify-content-center align-items-center">
                                 <button class="minus-btn" onclick="handleMinus()"><svg
@@ -29,7 +27,7 @@ const renderCartList = (array) => {
                                 </button>
                             </div>
                         </td>
-                        <td>$${item.price}.00</td>
+                        
                         <td>
                             <button class="btn btn-danger" onclick="deleteItem(${item.id})">
                                 <i class="fa-solid fa-trash-can"></i>
@@ -42,7 +40,6 @@ const renderCartList = (array) => {
   cartBox.innerHTML = content.join("");
 };
 
-
 const getLocalStorage = () => {
   let dataLocal = JSON.parse(localStorage.getItem("cartList"));
 
@@ -51,11 +48,3 @@ const getLocalStorage = () => {
   }
 };
 getLocalStorage();
-
-
-
-
-
-
-
-
