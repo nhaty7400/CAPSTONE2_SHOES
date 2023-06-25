@@ -1,25 +1,70 @@
+const cartList = new CartList();
+
+const setLocalStorage = () => {
+  localStorage.setItem("cartList", JSON.stringify(cartList.itemArray));
+};
+
+function addToCart() {
+  cartList.itemArray = JSON.parse(localStorage.getItem("cartList"));
+  if (cartList.itemArray == null) {
+    cartList.itemArray = [];
+  }
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get("productid");
+
+  axios({
+    method: "get",
+    url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=" + myParam,
+  })
+    .then(function (result) {
+      let itemData = result.data.content;
+      return itemData;
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+  setTimeout(() => {
+    let id = itemData.id;
+    let img = itemData.image;
+    let name = itemData.name;
+    let price = itemData.price;
+    let quantityOrder = 1;
+
+    const item = new CartItem(id, img, name, price, quantityOrder);
+
+    if (cartList.isExist(id) === false) {
+      cartList.add(item);
+      alert("Add new item to cart success");
+    } else {
+      cartList.quantityUp(item);
+      alert("Add item to cart success");
+    }
+
+    setLocalStorage();
+  }, 1000);
+}
+
 window.onload = function () {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("productid");
 
-  function getProduct() {
-    axios({
-      method: "get",
-      url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=" + myParam,
+  axios({
+    method: "get",
+    url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=" + myParam,
+  })
+    .then(function (result) {
+      renderProduct(result.data.content);
+      renderSizeBtn(result.data.content.size);
+      renderListRelatedProducts(result.data.content.relatedProducts);
+      itemData = result.data.content;
     })
-      .then(function (result) {
-        renderProduct(result.data.content);
-        renderSizeBtn(result.data.content.size);
-        renderListRelatedProducts(result.data.content.relatedProducts);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }
-
-  getProduct();
+    .catch(function (error) {
+      console.log(error);
+    });
 
   // renderProduct feature
+
   const renderProduct = (product) => {
     const productBox = document.getElementById("product-detail");
 
@@ -40,7 +85,7 @@ window.onload = function () {
               <div class="size-btn-group">
               </div>
           </div>
-          <button class="cybershoes-carousel-btn my-5" id="addToCart">Add to cart</button>
+          <button class="cybershoes-carousel-btn my-5" id="addToCart5" onclick="addToCart()">Add to cart</button>
       </div>
               `;
 
